@@ -17,3 +17,6 @@ df['Case_Status'].fillna('Unknown',inplace=True)
 #adding application month as an attribute
 df['Application_Month']=df['Application_Date'].dt.month_name()
 df.to_csv('visa_dataset.csv',index=False)
+
+#encoding the dataset 
+df_encoded=pd.get_dummies(df, columns=['Visa_Type','Visa_Class','Gender','Applicant_Country','Visa_Country','Processing_Center','Case_Status'])
