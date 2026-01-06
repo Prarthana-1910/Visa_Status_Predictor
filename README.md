@@ -35,3 +35,22 @@
    5. Visa-class-wise average processing time,
 
    6. Delay_Status categorical label based on processing time thresholds (Fast, Normal, Delayed, Severely Delayed).
+
+
+**Milestone 3: Predictive Modeling**
+
+**Objective:** Develop, evaluate, and optimize regression models for accurate visa processing time prediction.
+
+**Tasks Performed:**
+
+1. **Model development:** Implemented baseline regression models including Linear Regression and Random Forest Regressor using the processed feature dataset. Ensured an appropriate train–test split to prevent data leakage and maintain fair model evaluation.
+
+2. **Model training:** Trained each regression model on the training dataset after completing preprocessing and feature encoding steps, ensuring consistent feature representation across all models.
+
+3. **Performance evaluation:** Evaluated model performance using standard regression metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to objectively assess prediction accuracy and error distribution.
+
+4. **Model comparison and selection:** Compared baseline models based on evaluation metrics and overall generalization performance, and selected the best-performing model considering both accuracy and robustness.
+
+5. **Model fine-tuning:** Applied hyperparameter tuning techniques to the selected model to further improve performance, reduce prediction error, and enhance generalization on unseen data.
+
+
