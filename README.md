@@ -1,4 +1,6 @@
 # AI Enabled Visa Status Prediction and Processing time Estimator
+Link for Project: https://visastatuspredictor-dmk6anpdyravgfvs2fcyq3.streamlit.app/
+
 **Milestone 1:** Data Collection & Preprocessing 
 
   **Objective:** Build structured, cleaned dataset for modeling.
@@ -53,4 +55,16 @@
 
 5. **Model fine-tuning:** Applied hyperparameter tuning techniques to the selected model to further improve performance, reduce prediction error, and enhance generalization on unseen data.
 
+**Milestone 4: Web Application Development & Deployment**
 
+**Objective:** Design, integrate, and deploy a fully functional web-based visa processing time estimator for end-user interaction.
+
+**Tasks Performed:**
+
+1. **Frontend development:** Designed and implemented an intuitive user interface using Streamlit, incorporating structured input forms to capture applicant and visa-related details efficiently.
+
+2. **Backend integration:** Connected the trained and optimized prediction model to the web application backend, ensuring seamless data flow between user inputs, preprocessing pipeline, and the prediction engine.
+
+3. **Application deployment:** Deployed the complete web application on a cloud platform streamlit cloud, configuring environment dependencies and ensuring reliable accessibility.
+
+4. **End-to-end testing:** Conducted comprehensive testing using multiple sample cases to validate prediction accuracy, application stability, and overall user experience across different input scenarios.
