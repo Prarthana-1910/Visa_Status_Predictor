@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 """MILESTONE 1"""
 
 #reading csv file having missing values with real time dates
-df1=pd.read_csv(r"data\visa_dataset_final_missing.csv", parse_dates=['Application_Date','Decision_Date']) 
+df1=pd.read_csv("data/visa_dataset_final_missing.csv", parse_dates=['Application_Date','Decision_Date']) 
 print(df1.isnull().sum())
 
 #reading preprocessed csv file 
-df=pd.read_csv(r"data\vigit ad sa_dataset.csv",parse_dates=['Application_Date','Decision_Date'])
+df=pd.read_csv("data/vigit ad sa_dataset.csv",parse_dates=['Application_Date','Decision_Date'])
 
 #handling missing values
 df['Decision_Date'].fillna(df['Decision_Date'].mode()[0], inplace=True)
@@ -123,4 +123,4 @@ df2["visa_class_Avg"]=df["Visa_Class"].map(visa_class_Avg)
 
 df2["Processing_Days"]=df["Processing_Days"]
 
-df2.to_csv(r'data\features.csv',index=False)
+df2.to_csv('data/features.csv',index=False)

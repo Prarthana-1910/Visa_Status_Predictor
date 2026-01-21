@@ -14,7 +14,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_pipeline():
-    return joblib.load(r"models\gradient_boost_pipeline_tuned.joblib")
+    return joblib.load("models/gradient_boost_pipeline_tuned.joblib")
 pipeline=load_pipeline()
 
 #UI
@@ -71,9 +71,9 @@ with col2:
 #Pre-processing the input data
 application_month=app_date.month
 
-country_avg_map=joblib.load(r"models\country_avg_map.joblib")
-visa_type_avg_map=joblib.load(r"models\visa_type_avg_map.joblib")
-visa_class_avg_map=joblib.load(r"models\visa_class_avg_map.joblib")
+country_avg_map=joblib.load("models/country_avg_map.joblib")
+visa_type_avg_map=joblib.load("models/visa_type_avg_map.joblib")
+visa_class_avg_map=joblib.load("models/visa_class_avg_map.joblib")
 
 input_df=pd.DataFrame([{
     "Application_Month":application_month,
